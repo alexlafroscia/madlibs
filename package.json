@@ -1,0 +1,37 @@
+{
+  "name": "@alexlafroscia/madlibs",
+  "version": "1.0.0",
+  "description": "Helper for partial function creation",
+  "author": "Alex LaFroscia <alex@lafroscia.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "pika build",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@pika/pack": "^0.5.0",
+    "@pika/plugin-build-node": "^0.6.0",
+    "@pika/plugin-build-types": "^0.6.0",
+    "@pika/plugin-build-web": "^0.6.0",
+    "@pika/plugin-standard-pkg": "^0.6.0",
+    "@types/jest": "^24.0.17",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg"
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ],
+      [
+        "@pika/plugin-build-types"
+      ]
+    ]
+  }
+}
