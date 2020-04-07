@@ -10,7 +10,7 @@ And thus, this silly little library was born.
 
 ## Example
 
-```js
+```javascript
 import { create, blank } from "@alexlafroscia/madlibs";
 
 function greetPerson(greeting, person) {
@@ -30,3 +30,5 @@ greetAlex("Goodbye"); // Goodbye, Alex
 const sayGoodbyeToAlex = create(greetAlex, "Goodbye");
 sayGoodbyeToAlex(); // Goodbye, Alex
 ```
+
+[madlibs]: https://en.wikipedia.org/wiki/Mad_Libs
